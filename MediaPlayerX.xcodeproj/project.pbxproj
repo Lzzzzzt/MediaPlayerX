@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1394FF12A5FE5980085B277 /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1394FF02A5FE5980085B277 /* ControlPanelView.swift */; };
 		F19710F02A5F843400BD1AF7 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19710EF2A5F843400BD1AF7 /* MusicView.swift */; };
 		F19710F22A5F845B00BD1AF7 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19710F12A5F845B00BD1AF7 /* VideoView.swift */; };
 		F19710F42A5F846E00BD1AF7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19710F32A5F846E00BD1AF7 /* SettingView.swift */; };
+		F19710F72A5FBA1200BD1AF7 /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = F19710F62A5FBA1200BD1AF7 /* SlideOverCard */; };
+		F19710FC2A5FBA7C00BD1AF7 /* TitleAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19710FB2A5FBA7C00BD1AF7 /* TitleAreaView.swift */; };
 		F1AFA8292A5E9E0300E92190 /* MediaPlayerXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AFA8282A5E9E0300E92190 /* MediaPlayerXApp.swift */; };
 		F1AFA82B2A5E9E0300E92190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AFA82A2A5E9E0300E92190 /* ContentView.swift */; };
 		F1AFA82D2A5E9E0400E92190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AFA82C2A5E9E0400E92190 /* Assets.xcassets */; };
@@ -17,9 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F1394FF02A5FE5980085B277 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ControlPanelView.swift; path = Views/ControlPanelView.swift; sourceTree = "<group>"; };
 		F19710EF2A5F843400BD1AF7 /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
 		F19710F12A5F845B00BD1AF7 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		F19710F32A5F846E00BD1AF7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		F19710FB2A5FBA7C00BD1AF7 /* TitleAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAreaView.swift; sourceTree = "<group>"; };
 		F1AFA8252A5E9E0300E92190 /* MediaPlayerX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaPlayerX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AFA8282A5E9E0300E92190 /* MediaPlayerXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerXApp.swift; sourceTree = "<group>"; };
 		F1AFA82A2A5E9E0300E92190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19710F72A5FBA1200BD1AF7 /* SlideOverCard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,11 +47,20 @@
 		F19710EE2A5F841700BD1AF7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F19710F82A5FBA3900BD1AF7 /* Components */,
 				F19710EF2A5F843400BD1AF7 /* MusicView.swift */,
 				F19710F12A5F845B00BD1AF7 /* VideoView.swift */,
 				F19710F32A5F846E00BD1AF7 /* SettingView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F19710F82A5FBA3900BD1AF7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F19710FB2A5FBA7C00BD1AF7 /* TitleAreaView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F1AFA81C2A5E9E0300E92190 = {
@@ -69,6 +84,7 @@
 			children = (
 				F1AFA8282A5E9E0300E92190 /* MediaPlayerXApp.swift */,
 				F1AFA82A2A5E9E0300E92190 /* ContentView.swift */,
+				F1394FF02A5FE5980085B277 /* ControlPanelView.swift */,
 				F19710EE2A5F841700BD1AF7 /* Views */,
 				F1AFA82C2A5E9E0400E92190 /* Assets.xcassets */,
 				F1AFA82E2A5E9E0400E92190 /* Preview Content */,
@@ -100,6 +116,9 @@
 			dependencies = (
 			);
 			name = MediaPlayerX;
+			packageProductDependencies = (
+				F19710F62A5FBA1200BD1AF7 /* SlideOverCard */,
+			);
 			productName = MediaPlayerX;
 			productReference = F1AFA8252A5E9E0300E92190 /* MediaPlayerX.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +147,9 @@
 				Base,
 			);
 			mainGroup = F1AFA81C2A5E9E0300E92190;
+			packageReferences = (
+				F19710F52A5FBA1200BD1AF7 /* XCRemoteSwiftPackageReference "SlideOverCard" */,
+			);
 			productRefGroup = F1AFA8262A5E9E0300E92190 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -155,8 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F19710F22A5F845B00BD1AF7 /* VideoView.swift in Sources */,
+				F19710FC2A5FBA7C00BD1AF7 /* TitleAreaView.swift in Sources */,
 				F19710F42A5F846E00BD1AF7 /* SettingView.swift in Sources */,
 				F1AFA82B2A5E9E0300E92190 /* ContentView.swift in Sources */,
+				F1394FF12A5FE5980085B277 /* ControlPanelView.swift in Sources */,
 				F19710F02A5F843400BD1AF7 /* MusicView.swift in Sources */,
 				F1AFA8292A5E9E0300E92190 /* MediaPlayerXApp.swift in Sources */,
 			);
@@ -357,6 +381,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F19710F52A5FBA1200BD1AF7 /* XCRemoteSwiftPackageReference "SlideOverCard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:joogps/SlideOverCard.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F19710F62A5FBA1200BD1AF7 /* SlideOverCard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F19710F52A5FBA1200BD1AF7 /* XCRemoteSwiftPackageReference "SlideOverCard" */;
+			productName = SlideOverCard;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F1AFA81D2A5E9E0300E92190 /* Project object */;
 }

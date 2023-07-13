@@ -11,24 +11,12 @@ struct VideoView: View {
     var body: some View {
         VStack {
             // Title Area
-            HStack {
-                // Title
-                Text("Video")
-                    .fontWeight(.heavy)
-                    .font(.system(size: 40))
-                    .padding(.leading)
-                    .padding()
-
-                Spacer()
-
-                // Actions
+            TitleAreaView(title: "Video") {
                 Button(action: {}) {
                     Image(systemName: "plus")
                         .font(.system(size: 25))
-                        .padding(.trailing, 6)
-                        .padding()
                 }
-            }.frame(maxWidth: .infinity)
+            }
             // Content
             ScrollView {}.frame(maxWidth: .infinity, maxHeight: .infinity)
         }.frame(maxWidth: .infinity, maxHeight: .infinity)

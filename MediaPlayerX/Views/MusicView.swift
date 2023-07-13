@@ -8,36 +8,49 @@
 import SwiftUI
 
 struct MusicView: View {
+    @State var openFileImporter: Bool = false
+    @State var text: String = ""
+
     var body: some View {
         VStack {
-            HStack {
-                // Title
-                Text("Music")
-                    .fontWeight(.heavy)
-                    .font(.system(size: 40))
-                    .padding(.leading)
-                    .padding()
-
-                Spacer()
-
-                // Actions
-                Button(action: {}) {
+            TitleAreaView(title: "Music") {
+                Button(action: { openFileImporter.toggle() }) {
                     Image(systemName: "plus")
                         .font(.system(size: 25))
-                        .padding(.trailing, 6)
-                        .padding()
-                        
+                }.fileImporter(
+                    isPresented: $openFileImporter,
+                    allowedContentTypes: [.audio])
+                { file in
+                    print(file)
                 }
-            }.frame(maxWidth: .infinity)
+            }
 
             // Content
-            ScrollView {}.frame(maxWidth: .infinity, maxHeight: .infinity)
-        }.frame(maxWidth: .infinity, maxHeight: .infinity)
-    }
-}
+            TextField("Search", text: $text)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(.horizontal, 30)
 
-struct MusicView_Previews: PreviewProvider {
-    static var previews: some View {
-        MusicView()
+            ScrollView {
+                ForEach(0 ..< 50) { _ in
+                    HStack {
+                        HStack {
+                            Image(systemName: "music.note")
+                                .padding([.leading])
+                                .font(.system(size: 30))
+                                .foregroundColor(.white)
+                            Text("Music")
+                                .bold()
+                                .foregroundColor(.white)
+                            Spacer()
+                        }
+
+                    }.frame(width: .infinity, height: 60)
+                        .background(.blue)
+                        .cornerRadius(16)
+                        .padding(.horizontal, 30)
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

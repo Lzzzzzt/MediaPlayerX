@@ -8,44 +8,47 @@
 import SwiftUI
 
 struct SettingView: View {
-    @Binding var mode: Bool
-    
+    @Binding var mode: ColorScheme
+
     var modeString: String {
         switch mode {
-            case false:
+            case .light:
                 return "sun.min"
-            case true:
+            case .dark:
                 return "moon"
+            @unknown default:
+                return "sun.min"
         }
     }
-    
+
     var body: some View {
         VStack {
             // Title Area
-            HStack {
-                // Title
-                Text("Settings")
-                    .fontWeight(.heavy)
-                    .font(.system(size: 40))
-                    .padding(.leading)
-                    .padding()
-                
-                Spacer()
-                
+            TitleAreaView(title: "Settings") {
                 Button(action: {
-                    mode.toggle()
+                    toggleColorSchme()
                 }) {
                     Image(systemName: modeString)
                         .font(.system(size: 25))
-                        .padding(.trailing, 6)
-                        .padding()
+                        .foregroundColor(.primary)
                 }
-                
-            }.frame(maxWidth: .infinity)
-            
+            }
+
             // Content
             ScrollView {}.frame(maxWidth: .infinity, maxHeight: .infinity)
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }
-    
+
+    private func toggleColorSchme() {
+        withAnimation {
+            switch mode {
+                case .dark:
+                    mode = .light
+                case .light:
+                    mode = .dark
+                @unknown default:
+                    mode = .light
+            }
+        }
+    }
 }

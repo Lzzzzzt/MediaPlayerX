@@ -5,30 +5,44 @@
 //  Created by Lzzzt on 2023/7/12.
 //
 
+import SlideOverCard
 import SwiftUI
 
 struct ContentView: View {
-    @State var isDark: Bool = false
+    @State var colorScheme: ColorScheme = .light
+    @State var isCardOpen: Bool = false
+
+    @State var isPanelOpen: Bool = false
 
     var body: some View {
         ZStack {
-            Color(.init(gray: 0.7, alpha: 0.3)).ignoresSafeArea()
-
             TabView {
                 MusicView().tabItem {
-                    Image(systemName: "music.note.list")
-                    Text("音乐")
+                    Label("音乐", systemImage: "music.note.list")
                 }
+
                 VideoView().tabItem {
-                    Image(systemName: "play.tv")
-                    Text("视频")
+                    Label("视频", systemImage: "play.tv")
                 }
-                SettingView(mode: $isDark).tabItem {
-                    Image(systemName: "gear")
-                    Text("设置")
+
+                SettingView(mode: $colorScheme).tabItem {
+                    Label("设置", systemImage: "gearshape.fill")
                 }
-            }
-        }
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(.red)
+
+            // Control Panel
+            ControlPanelView(isPanelOpen: $isPanelOpen)
+                .frame(maxWidth: .infinity, maxHeight: 75)
+                .padding(.horizontal, 16)
+                .shadow(radius: 10, x: 0, y: 3)
+                .offset(CGSize(width: 0, height: 285))
+                .slideOverCard(isPresented: $isPanelOpen) {
+                    Text("Hello, world!")
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                }
+
+        }.preferredColorScheme(colorScheme)
     }
 }
 
