@@ -24,7 +24,7 @@ struct SettingView: View {
     var body: some View {
         VStack {
             // Title Area
-            TitleAreaView(title: "Settings") {
+            TitleArea(title: "Settings") {
                 Button(action: {
                     toggleColorSchme()
                 }) {

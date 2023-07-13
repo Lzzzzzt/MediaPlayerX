@@ -11,7 +11,7 @@ struct VideoView: View {
     var body: some View {
         VStack {
             // Title Area
-            TitleAreaView(title: "Video") {
+            TitleArea(title: "Video") {
                 Button(action: {}) {
                     Image(systemName: "plus")
                         .font(.system(size: 25))

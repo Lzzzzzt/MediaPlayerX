@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TitleAreaView<Content: View>: View {
+struct TitleArea<Content: View>: View {
     private let actionArea: Content?
     private let title: String
 
@@ -44,6 +44,6 @@ struct TitleAreaView<Content: View>: View {
 
 struct Previewr: PreviewProvider {
     static var previews: some View {
-        TitleAreaView(title: "111", actionArea: {})
+        TitleArea(title: "111", actionArea: {})
     }
 }

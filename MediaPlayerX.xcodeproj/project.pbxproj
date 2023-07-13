@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F110824D2A600CBD00BDCD78 /* OpenedControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110824C2A600CBD00BDCD78 /* OpenedControlPanelView.swift */; };
+		F110824F2A60295300BDCD78 /* PlayerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110824E2A60295300BDCD78 /* PlayerDemo.swift */; };
 		F1394FF12A5FE5980085B277 /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1394FF02A5FE5980085B277 /* ControlPanelView.swift */; };
 		F19710F02A5F843400BD1AF7 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19710EF2A5F843400BD1AF7 /* MusicView.swift */; };
 		F19710F22A5F845B00BD1AF7 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19710F12A5F845B00BD1AF7 /* VideoView.swift */; };
 		F19710F42A5F846E00BD1AF7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19710F32A5F846E00BD1AF7 /* SettingView.swift */; };
 		F19710F72A5FBA1200BD1AF7 /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = F19710F62A5FBA1200BD1AF7 /* SlideOverCard */; };
-		F19710FC2A5FBA7C00BD1AF7 /* TitleAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19710FB2A5FBA7C00BD1AF7 /* TitleAreaView.swift */; };
+		F19710FC2A5FBA7C00BD1AF7 /* TitleArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19710FB2A5FBA7C00BD1AF7 /* TitleArea.swift */; };
 		F1AFA8292A5E9E0300E92190 /* MediaPlayerXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AFA8282A5E9E0300E92190 /* MediaPlayerXApp.swift */; };
 		F1AFA82B2A5E9E0300E92190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AFA82A2A5E9E0300E92190 /* ContentView.swift */; };
 		F1AFA82D2A5E9E0400E92190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AFA82C2A5E9E0400E92190 /* Assets.xcassets */; };
@@ -20,11 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F1394FF02A5FE5980085B277 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ControlPanelView.swift; path = Views/ControlPanelView.swift; sourceTree = "<group>"; };
+		F110824C2A600CBD00BDCD78 /* OpenedControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OpenedControlPanelView.swift; path = MediaPlayerX/OpenedControlPanelView.swift; sourceTree = SOURCE_ROOT; };
+		F110824E2A60295300BDCD78 /* PlayerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerDemo.swift; path = Views/PlayerDemo.swift; sourceTree = "<group>"; };
+		F1394FF02A5FE5980085B277 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
 		F19710EF2A5F843400BD1AF7 /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
 		F19710F12A5F845B00BD1AF7 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		F19710F32A5F846E00BD1AF7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		F19710FB2A5FBA7C00BD1AF7 /* TitleAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAreaView.swift; sourceTree = "<group>"; };
+		F19710FB2A5FBA7C00BD1AF7 /* TitleArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleArea.swift; sourceTree = "<group>"; };
 		F1AFA8252A5E9E0300E92190 /* MediaPlayerX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaPlayerX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AFA8282A5E9E0300E92190 /* MediaPlayerXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerXApp.swift; sourceTree = "<group>"; };
 		F1AFA82A2A5E9E0300E92190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,7 +51,8 @@
 		F19710EE2A5F841700BD1AF7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F19710F82A5FBA3900BD1AF7 /* Components */,
+				F1394FF02A5FE5980085B277 /* ControlPanelView.swift */,
+				F110824C2A600CBD00BDCD78 /* OpenedControlPanelView.swift */,
 				F19710EF2A5F843400BD1AF7 /* MusicView.swift */,
 				F19710F12A5F845B00BD1AF7 /* VideoView.swift */,
 				F19710F32A5F846E00BD1AF7 /* SettingView.swift */,
@@ -58,7 +63,7 @@
 		F19710F82A5FBA3900BD1AF7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				F19710FB2A5FBA7C00BD1AF7 /* TitleAreaView.swift */,
+				F19710FB2A5FBA7C00BD1AF7 /* TitleArea.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -82,9 +87,10 @@
 		F1AFA8272A5E9E0300E92190 /* MediaPlayerX */ = {
 			isa = PBXGroup;
 			children = (
+				F110824E2A60295300BDCD78 /* PlayerDemo.swift */,
 				F1AFA8282A5E9E0300E92190 /* MediaPlayerXApp.swift */,
 				F1AFA82A2A5E9E0300E92190 /* ContentView.swift */,
-				F1394FF02A5FE5980085B277 /* ControlPanelView.swift */,
+				F19710F82A5FBA3900BD1AF7 /* Components */,
 				F19710EE2A5F841700BD1AF7 /* Views */,
 				F1AFA82C2A5E9E0400E92190 /* Assets.xcassets */,
 				F1AFA82E2A5E9E0400E92190 /* Preview Content */,
@@ -177,12 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F19710F22A5F845B00BD1AF7 /* VideoView.swift in Sources */,
-				F19710FC2A5FBA7C00BD1AF7 /* TitleAreaView.swift in Sources */,
+				F19710FC2A5FBA7C00BD1AF7 /* TitleArea.swift in Sources */,
 				F19710F42A5F846E00BD1AF7 /* SettingView.swift in Sources */,
 				F1AFA82B2A5E9E0300E92190 /* ContentView.swift in Sources */,
 				F1394FF12A5FE5980085B277 /* ControlPanelView.swift in Sources */,
 				F19710F02A5F843400BD1AF7 /* MusicView.swift in Sources */,
+				F110824D2A600CBD00BDCD78 /* OpenedControlPanelView.swift in Sources */,
 				F1AFA8292A5E9E0300E92190 /* MediaPlayerXApp.swift in Sources */,
+				F110824F2A60295300BDCD78 /* PlayerDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
