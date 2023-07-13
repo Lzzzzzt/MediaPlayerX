@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F110824C2A600CBD00BDCD78 /* OpenedControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OpenedControlPanelView.swift; path = MediaPlayerX/OpenedControlPanelView.swift; sourceTree = SOURCE_ROOT; };
+		F110824C2A600CBD00BDCD78 /* OpenedControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OpenedControlPanelView.swift; path = MediaPlayerX/Views/OpenedControlPanelView.swift; sourceTree = SOURCE_ROOT; };
 		F110824E2A60295300BDCD78 /* PlayerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerDemo.swift; path = Views/PlayerDemo.swift; sourceTree = "<group>"; };
 		F1394FF02A5FE5980085B277 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
 		F19710EF2A5F843400BD1AF7 /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
@@ -51,8 +51,8 @@
 		F19710EE2A5F841700BD1AF7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F1394FF02A5FE5980085B277 /* ControlPanelView.swift */,
 				F110824C2A600CBD00BDCD78 /* OpenedControlPanelView.swift */,
+				F1394FF02A5FE5980085B277 /* ControlPanelView.swift */,
 				F19710EF2A5F843400BD1AF7 /* MusicView.swift */,
 				F19710F12A5F845B00BD1AF7 /* VideoView.swift */,
 				F19710F32A5F846E00BD1AF7 /* SettingView.swift */,
