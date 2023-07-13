@@ -24,6 +24,7 @@ struct MusicView: View {
                 Button(action: {}) {
                     Image(systemName: "plus")
                         .font(.system(size: 25))
+                        .padding(.trailing, 6)
                         .padding()
                         
                 }

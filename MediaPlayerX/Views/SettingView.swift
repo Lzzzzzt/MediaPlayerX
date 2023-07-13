@@ -37,6 +37,7 @@ struct SettingView: View {
                 }) {
                     Image(systemName: modeString)
                         .font(.system(size: 25))
+                        .padding(.trailing, 6)
                         .padding()
                 }
                 

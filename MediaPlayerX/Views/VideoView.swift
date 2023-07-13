@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct VideoView: View {
-    
     var body: some View {
         VStack {
             // Title Area
@@ -19,14 +18,14 @@ struct VideoView: View {
                     .font(.system(size: 40))
                     .padding(.leading)
                     .padding()
-                
-                
+
                 Spacer()
-                
+
                 // Actions
                 Button(action: {}) {
                     Image(systemName: "plus")
                         .font(.system(size: 25))
+                        .padding(.trailing, 6)
                         .padding()
                 }
             }.frame(maxWidth: .infinity)
