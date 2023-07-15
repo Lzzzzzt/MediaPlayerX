@@ -7,33 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F110824D2A600CBD00BDCD78 /* OpenedControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110824C2A600CBD00BDCD78 /* OpenedControlPanelView.swift */; };
-		F110824F2A60295300BDCD78 /* PlayerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110824E2A60295300BDCD78 /* PlayerDemo.swift */; };
 		F1394FF12A5FE5980085B277 /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1394FF02A5FE5980085B277 /* ControlPanelView.swift */; };
 		F19710F02A5F843400BD1AF7 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19710EF2A5F843400BD1AF7 /* MusicView.swift */; };
 		F19710F22A5F845B00BD1AF7 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19710F12A5F845B00BD1AF7 /* VideoView.swift */; };
-		F19710F42A5F846E00BD1AF7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19710F32A5F846E00BD1AF7 /* SettingView.swift */; };
 		F19710F72A5FBA1200BD1AF7 /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = F19710F62A5FBA1200BD1AF7 /* SlideOverCard */; };
-		F19710FC2A5FBA7C00BD1AF7 /* TitleArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19710FB2A5FBA7C00BD1AF7 /* TitleArea.swift */; };
+		F1A911372A6231A70001432E /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A911362A6231A70001432E /* MusicPlayer.swift */; };
+		F1A9113F2A6283B40001432E /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A9113E2A6283B40001432E /* VideoViewModel.swift */; };
+		F1A911412A6285FD0001432E /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A911402A6285FD0001432E /* SearchBarView.swift */; };
+		F1A911452A62CC9B0001432E /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A911442A62CC9B0001432E /* VideoPlayerView.swift */; };
+		F1A911482A62CF5F0001432E /* AZVideoPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = F1A911472A62CF5F0001432E /* AZVideoPlayer */; };
+		F1A9114A2A62D7690001432E /* MusicDynamicBackgroud.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A911492A62D7690001432E /* MusicDynamicBackgroud.swift */; };
 		F1AFA8292A5E9E0300E92190 /* MediaPlayerXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AFA8282A5E9E0300E92190 /* MediaPlayerXApp.swift */; };
 		F1AFA82B2A5E9E0300E92190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AFA82A2A5E9E0300E92190 /* ContentView.swift */; };
 		F1AFA82D2A5E9E0400E92190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AFA82C2A5E9E0400E92190 /* Assets.xcassets */; };
 		F1AFA8302A5E9E0400E92190 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AFA82F2A5E9E0400E92190 /* Preview Assets.xcassets */; };
+		F1B2FC262A60EF2600C79EDB /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B2FC252A60EF2600C79EDB /* MusicViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F110824C2A600CBD00BDCD78 /* OpenedControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OpenedControlPanelView.swift; path = MediaPlayerX/Views/OpenedControlPanelView.swift; sourceTree = SOURCE_ROOT; };
-		F110824E2A60295300BDCD78 /* PlayerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerDemo.swift; path = Views/PlayerDemo.swift; sourceTree = "<group>"; };
 		F1394FF02A5FE5980085B277 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
 		F19710EF2A5F843400BD1AF7 /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
 		F19710F12A5F845B00BD1AF7 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
-		F19710F32A5F846E00BD1AF7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		F19710FB2A5FBA7C00BD1AF7 /* TitleArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleArea.swift; sourceTree = "<group>"; };
+		F1A911362A6231A70001432E /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		F1A9113E2A6283B40001432E /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		F1A911402A6285FD0001432E /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBarView.swift; path = MediaPlayerX/Views/SearchBarView.swift; sourceTree = SOURCE_ROOT; };
+		F1A911442A62CC9B0001432E /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		F1A911492A62D7690001432E /* MusicDynamicBackgroud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDynamicBackgroud.swift; sourceTree = "<group>"; };
 		F1AFA8252A5E9E0300E92190 /* MediaPlayerX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaPlayerX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AFA8282A5E9E0300E92190 /* MediaPlayerXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerXApp.swift; sourceTree = "<group>"; };
 		F1AFA82A2A5E9E0300E92190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F1AFA82C2A5E9E0400E92190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1AFA82F2A5E9E0400E92190 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1B2FC252A60EF2600C79EDB /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A911482A62CF5F0001432E /* AZVideoPlayer in Frameworks */,
 				F19710F72A5FBA1200BD1AF7 /* SlideOverCard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,21 +57,56 @@
 		F19710EE2A5F841700BD1AF7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F110824C2A600CBD00BDCD78 /* OpenedControlPanelView.swift */,
-				F1394FF02A5FE5980085B277 /* ControlPanelView.swift */,
-				F19710EF2A5F843400BD1AF7 /* MusicView.swift */,
-				F19710F12A5F845B00BD1AF7 /* VideoView.swift */,
-				F19710F32A5F846E00BD1AF7 /* SettingView.swift */,
+				F1A911402A6285FD0001432E /* SearchBarView.swift */,
+				F1A9113C2A62838A0001432E /* Music */,
+				F1A9113D2A6283950001432E /* Video */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F19710F82A5FBA3900BD1AF7 /* Components */ = {
+		F1A911352A62317E0001432E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				F19710FB2A5FBA7C00BD1AF7 /* TitleArea.swift */,
+				F1A9113B2A6283760001432E /* Video */,
+				F1A9113A2A62836D0001432E /* Music */,
 			);
-			path = Components;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F1A9113A2A62836D0001432E /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				F1B2FC252A60EF2600C79EDB /* MusicViewModel.swift */,
+				F1A911362A6231A70001432E /* MusicPlayer.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		F1A9113B2A6283760001432E /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				F1A9113E2A6283B40001432E /* VideoViewModel.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		F1A9113C2A62838A0001432E /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				F1A911492A62D7690001432E /* MusicDynamicBackgroud.swift */,
+				F1394FF02A5FE5980085B277 /* ControlPanelView.swift */,
+				F19710EF2A5F843400BD1AF7 /* MusicView.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		F1A9113D2A6283950001432E /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				F19710F12A5F845B00BD1AF7 /* VideoView.swift */,
+				F1A911442A62CC9B0001432E /* VideoPlayerView.swift */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 		F1AFA81C2A5E9E0300E92190 = {
@@ -87,10 +128,9 @@
 		F1AFA8272A5E9E0300E92190 /* MediaPlayerX */ = {
 			isa = PBXGroup;
 			children = (
-				F110824E2A60295300BDCD78 /* PlayerDemo.swift */,
 				F1AFA8282A5E9E0300E92190 /* MediaPlayerXApp.swift */,
 				F1AFA82A2A5E9E0300E92190 /* ContentView.swift */,
-				F19710F82A5FBA3900BD1AF7 /* Components */,
+				F1A911352A62317E0001432E /* ViewModels */,
 				F19710EE2A5F841700BD1AF7 /* Views */,
 				F1AFA82C2A5E9E0400E92190 /* Assets.xcassets */,
 				F1AFA82E2A5E9E0400E92190 /* Preview Content */,
@@ -124,6 +164,7 @@
 			name = MediaPlayerX;
 			packageProductDependencies = (
 				F19710F62A5FBA1200BD1AF7 /* SlideOverCard */,
+				F1A911472A62CF5F0001432E /* AZVideoPlayer */,
 			);
 			productName = MediaPlayerX;
 			productReference = F1AFA8252A5E9E0300E92190 /* MediaPlayerX.app */;
@@ -155,6 +196,7 @@
 			mainGroup = F1AFA81C2A5E9E0300E92190;
 			packageReferences = (
 				F19710F52A5FBA1200BD1AF7 /* XCRemoteSwiftPackageReference "SlideOverCard" */,
+				F1A911462A62CF5F0001432E /* XCRemoteSwiftPackageReference "AZVideoPlayer" */,
 			);
 			productRefGroup = F1AFA8262A5E9E0300E92190 /* Products */;
 			projectDirPath = "";
@@ -183,14 +225,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F19710F22A5F845B00BD1AF7 /* VideoView.swift in Sources */,
-				F19710FC2A5FBA7C00BD1AF7 /* TitleArea.swift in Sources */,
-				F19710F42A5F846E00BD1AF7 /* SettingView.swift in Sources */,
+				F1A911372A6231A70001432E /* MusicPlayer.swift in Sources */,
 				F1AFA82B2A5E9E0300E92190 /* ContentView.swift in Sources */,
+				F1B2FC262A60EF2600C79EDB /* MusicViewModel.swift in Sources */,
+				F1A9114A2A62D7690001432E /* MusicDynamicBackgroud.swift in Sources */,
 				F1394FF12A5FE5980085B277 /* ControlPanelView.swift in Sources */,
+				F1A911412A6285FD0001432E /* SearchBarView.swift in Sources */,
+				F1A911452A62CC9B0001432E /* VideoPlayerView.swift in Sources */,
 				F19710F02A5F843400BD1AF7 /* MusicView.swift in Sources */,
-				F110824D2A600CBD00BDCD78 /* OpenedControlPanelView.swift in Sources */,
+				F1A9113F2A6283B40001432E /* VideoViewModel.swift in Sources */,
 				F1AFA8292A5E9E0300E92190 /* MediaPlayerXApp.swift in Sources */,
-				F110824F2A60295300BDCD78 /* PlayerDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +443,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		F1A911462A62CF5F0001432E /* XCRemoteSwiftPackageReference "AZVideoPlayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:adamzarn/AZVideoPlayer.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -406,6 +458,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F19710F52A5FBA1200BD1AF7 /* XCRemoteSwiftPackageReference "SlideOverCard" */;
 			productName = SlideOverCard;
+		};
+		F1A911472A62CF5F0001432E /* AZVideoPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1A911462A62CF5F0001432E /* XCRemoteSwiftPackageReference "AZVideoPlayer" */;
+			productName = AZVideoPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "azvideoplayer",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:adamzarn/AZVideoPlayer.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7d4abac5d5a82b35d0ee08b23474f6653c4a115d"
+      }
+    },
+    {
       "identity" : "slideovercard",
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:joogps/SlideOverCard.git",
