@@ -1,9 +1,3 @@
-//
-//  VideoPlayer.swift
-//  MediaPlayerX
-//
-//  Created by Lzzzt on 2023/7/15.
-//
 
 import AVKit
 import AZVideoPlayer

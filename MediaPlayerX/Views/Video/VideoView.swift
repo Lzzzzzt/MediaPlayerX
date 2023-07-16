@@ -1,9 +1,3 @@
-//
-//  VideoView.swift
-//  MediaPlayerX
-//
-//  Created by Lzzzt on 2023/7/13.
-//
 
 import AVKit
 import SwiftUI
@@ -177,6 +171,7 @@ struct VideoListItem: View {
 
 // struct VideoView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        VideoView()
+//        @State var colorScheme: ColorScheme = .light
+//        VideoView(mode: $colorScheme)
 //    }
 // }
